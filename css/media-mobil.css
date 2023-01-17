@@ -1,7 +1,57 @@
+/*header*/
+
+/*top*/
 .top{
     background-image: url("../images/pageheader-1920w.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    max-width: 960px;
+    background-position: center;
+
+}
+
+/*sluzby*/
+.sluzby{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    margin: 20px;
+}
+
+.sluzby__img{
+    max-width: 100%;
+    
+}
+
+.box{
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../images/background-CTAblock-4460w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 23px;
+}
+
+.references{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.references__text{
+    text-align: left;
+}
+
+.references__img{
+    max-width: 100%;
+}
+
+.footer{
+    background-color: var(--main-orange);
+    color: white;
+    display:inline-block;
+    text-align: center;
+    padding: 40px;
+    margin-top: 75px;
 }
