@@ -1,12 +1,24 @@
+body{
+    margin: -8px;
+}
 /*header*/
 
 /*top*/
 .top{
-    background-image: url("../images/pageheader-1920w.jpg");
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../images/pageheader-1920w.jpg"); 
+    background-blend-mode: normal, normal, hue, normal;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
+    padding: 23px;
+    
+}
 
+.top__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 /*sluzby*/
@@ -18,9 +30,44 @@
     margin: 20px;
 }
 
-.sluzby__img{
-    max-width: 100%;
+.sluzby__img--novostavby{
+    background: url("../images/sluzba-novostavby-1200w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 134px;
+    border-radius: 0px 0px 40px 0px;
+
+}
+
+.sluzby__img--prumyslove{
+    background: url("../images/sluzba-prumyslove-stavby-1920w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 134px;
+    border-radius: 0px 0px 0px 20px;
+
+}
+
+.sluzby__img--rekonstrukce{
+    background: url("../images/sluzba-rekonstrukce-1920w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 134px;
+    border-radius: 0px 0px 40px 0px;
     
+}
+
+.sluzby__img--plochy{
+    background: url("../images/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 134px;
+    border-radius: 0px 0px 0px 20px;
+
 }
 
 .box{
