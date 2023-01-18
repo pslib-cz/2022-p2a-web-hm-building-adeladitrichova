@@ -38,3 +38,11 @@ h4{
     font-size: 20px;
     font-weight: 300;
 }
+
+.nav__link{
+    color: white;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 700;
+    
+}
