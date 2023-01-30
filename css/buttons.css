@@ -35,3 +35,17 @@
     padding: 20px 50px;
     display: inline-block;
 }
+
+.form__button--kontakt{
+    font-family: Open Sans;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background-color: var(--main-orange);
+    padding: 20px 50px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
