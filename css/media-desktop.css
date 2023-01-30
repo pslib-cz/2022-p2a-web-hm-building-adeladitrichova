@@ -1,3 +1,13 @@
 .box{
     padding-left: 3em;
 }
+
+.reference__list{
+    flex-direction: row;
+       
+}
+
+.reference__img{
+    margin: 20px;
+}
+
