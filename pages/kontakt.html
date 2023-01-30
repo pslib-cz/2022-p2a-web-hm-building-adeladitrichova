@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Building</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/buttons.css" />
+    <link rel="stylesheet" href="../css/media-mobil.css" />
+    <link
+      rel="stylesheet"
+      href="./css/media-desktop.css"
+      media="screen and (min-width: 1350px)"
+    />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./images/logo.png" alt="logo" width="130px"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span>Domů</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/sluzby.html">
+                        <span>Služby</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/reference.html">
+                        <span>Reference</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/onas.html">
+                        <span>O nás</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/kontakt.html">
+                        <span>Kontakt</span>
+                    </a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+          </nav>
+          <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+              btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                  menu.classList.toggle("navbar__menu--hidden");
+                }
+              }
+            }
+          </script>
+        </header>
+        <div class="kontakt__container">
+            <h2>Kontaktujte nás</h2>
+            <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+            <img class="kontakt__img--mapa" src="../images/mapa.jpg" alt="mapa">
+            <span class="kontakt__header">Nezávazná poptávka služeb</span>
+            <p class="kontakt__p">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+
+        </div>
+        <footer class="kontakt__footer--kontakt">
+            <a class="footer__a--kontakt" href="#"><button class="footer__button--kontakt">Nezávazně se poptat</button></a>
+        </footer>
+    </body>
+</html>

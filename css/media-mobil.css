@@ -1,22 +1,12 @@
 body{
-    margin: -8px;
+    margin: 0;
 }
-/*header*/
-/*.navbar__nav{
-    visibility: hidden;
-}*/
 
-.navbar__nav{
+.navbar__menu{
     padding: 20px;
-    align-items: center;
-    position: relative;
     background-color: var(--main-orange);
     margin: 20px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
 }
 
 .navbar__img{
@@ -27,11 +17,7 @@ body{
 }
 
 .item{
-    margin-bottom: 15px;
-}
-
-.logo{
-    height: 44px;
+    margin-top: 10px;
 }
 
 /*top*/
@@ -47,9 +33,11 @@ body{
 }
 
 .top__text{
-    display: flex;
     flex-direction: column;
-    justify-content: end;
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+
 }
 
 /*sluzby*/
@@ -132,3 +120,50 @@ body{
     padding: 40px;
     margin-top: 75px;
 }
+
+
+/*reference page*/
+
+.reference{
+    margin: 20px;
+}
+
+.reference__list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+   
+}
+
+
+.reference__list img{
+    max-width: 100%;
+}
+
+/* O nás */
+
+.onas__container{
+    margin: 20px;
+}
+
+.onas__item::marker{
+    color: var(--main-orange);
+    font-weight: 700;
+
+}
+
+/* Kontakt */
+
+.kontakt__container{
+    margin: 20px;
+}
+
+.kontakt__img--mapa {
+    max-width: 100%;
+    margin-top: 42px;
+    margin-bottom: 50px;
+
+}
+
+
