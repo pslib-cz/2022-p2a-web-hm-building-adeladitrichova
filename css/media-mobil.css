@@ -166,4 +166,87 @@ body{
 
 }
 
+/* Ikonky */
+
+.icon-dot {
+    position: relative;
+}
+
+.icon-dot::before {
+    bottom: -9px;
+    left: -55px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    background-color: #EB6C27;    
+}
+
+.icon-dot--phone::before {
+    content: url("");
+    position: absolute;
+    left: -45px;
+    z-index: 1;
+}
+
+.icon-dot--mail::before {
+    content: url("");
+    position: absolute;
+    left: -45px;
+    z-index: 1;
+}
+
+.icon-dot--position::before {
+    content: url("");
+    position: absolute;
+    left: -42px;
+    z-index: 1;
+}
+
+
+/* Formulář */
+
+.form-labels {
+    margin-top: 2em;
+}
+
+.form .button {
+    margin-top: 1.5em;
+}
+
+label {
+    font-weight: 800;
+}
+
+input[type=text], select, textarea {
+    font-weight: 800;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid var(--main-orange);
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: var(--main-orange);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    min-width: 19em;
+    padding: 1.5em;
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--main-orange);
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
