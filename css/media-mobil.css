@@ -250,3 +250,33 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+/* Sluzby */
+
+/* Novostavby */
+.novostavby__container{
+    margin: 20px;
+
+}
+
+.novostavby__p{
+    font-size: 14px;
+}
+
+.novostavby__ul{
+    font-size: 14px;
+}
+
+
+/* Prumysl */
+.prumysl__container{
+    margin: 20px;
+
+}
+
+.prumysl__ul{
+    font-size: 14px;
+}
+
+.prumysl__p{
+    font-size: 14px;
+}
