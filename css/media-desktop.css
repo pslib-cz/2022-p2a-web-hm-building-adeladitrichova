@@ -1,3 +1,62 @@
+/* Index */
+
+.sluzby__text--novostavby{
+    grid-area: novostavby;
+}
+
+.sluzby__text--prumyslove{
+    grid-area: prumyslove;
+}
+
+.sluzby__text--rekonstrukce{
+    grid-area: rekonstrukce;
+}
+
+.sluzby__text--plochy{
+    grid-area: plocha;
+}
+
+
+.sluzby__img--novostavby{
+    grid-area: imgnovostavby;
+}
+
+.sluzby__img--prumyslove{
+    grid-area: imgprumyslove;
+}
+
+.sluzby__img--rekonstrukce{
+    grid-area: imgrekonstrukce;
+}
+
+.sluzby__img--plochy{
+    grid-area: imgplocha;
+}
+
+.sluzby{
+    display: grid;
+    grid-template-areas: "imgnovostavby novostavby" "prumyslove imgprumyslove" "imgrekonstrukce rekonstrukce" "plochy imgplochy";
+    grid-template-rows: ;
+    grid-template-columns: 150px 1fr;
+
+}
+
+
+
+
+
+
+
+/* neco dal */
+
+.references{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
 .box{
     padding-left: 3em;
 }
