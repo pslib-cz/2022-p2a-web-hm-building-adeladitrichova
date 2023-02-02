@@ -17,6 +17,39 @@
       media="screen and (min-width: 1350px)"
     />
 </head>
+<header class="header">
+    <nav class="navbar">
+        <a href="./index.html" class="navbar__logo"><img src="./images/logo.png" alt="logo" width="130px"></a>
+        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">DOMŮ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/sluzby.html">SLUŽBY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link--active" href="../../pages/reference.html">REFERENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/onas.html">O NÁS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/kontakt.html">KONTAKT</a>
+            </li>
+          </menu>
+        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+      </nav>
+      <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+          }
+        }
+      </script>
 <body>
     <div class="novostavby__container">
         <h5>Novostavby</h5>
@@ -33,10 +66,11 @@
                 <li class="novostaby__li">střešní konstrukce</li>
             </ul>
     </div>
+    
     <footer class="footer">
         <h2>Plácneme si pro Váš projekt?</h2>
         <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <a class="footer__a" href="./pages/sluzby.html"><button class="footer__button">Nezávazně se poptat</button></a>
+        <a href="./pages/reference.html" class="footer__button">Více referencí</a>
     </footer>
 </body>
 </html>

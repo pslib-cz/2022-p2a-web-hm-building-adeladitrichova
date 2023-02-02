@@ -1,48 +1,18 @@
 /* Index */
 
-.sluzby__text--novostavby{
-    grid-area: novostavby;
-}
-
-.sluzby__text--prumyslove{
-    grid-area: prumyslove;
-}
-
-.sluzby__text--rekonstrukce{
-    grid-area: rekonstrukce;
-}
-
-.sluzby__text--plochy{
-    grid-area: plocha;
-}
-
-
-.sluzby__img--novostavby{
-    grid-area: imgnovostavby;
-}
-
-.sluzby__img--prumyslove{
-    grid-area: imgprumyslove;
-}
-
-.sluzby__img--rekonstrukce{
-    grid-area: imgrekonstrukce;
-}
-
-.sluzby__img--plochy{
-    grid-area: imgplocha;
-}
 
 .sluzby{
     display: grid;
-    grid-template-areas: "imgnovostavby novostavby" "prumyslove imgprumyslove" "imgrekonstrukce rekonstrukce" "plochy imgplochy";
-    grid-template-rows: ;
-    grid-template-columns: 150px 1fr;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 100px;
 
 }
 
-
-
+.sluzby__img {
+    grid-row: 1 / 4;
+    height: auto;
+}
 
 
 
@@ -50,8 +20,6 @@
 /* neco dal */
 
 .references{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     text-align: center;
     margin: 20px;
@@ -62,11 +30,32 @@
 }
 
 .reference__list{
+    display: flex;
     flex-direction: row;
+    margin-bottom: -50px;
+    margin-left: 1em;
+    margin-left: 1em;
        
 }
 
-.reference__img{
-    margin: 20px;
+.references__zbrojnice{
+    margin: 10px;
 }
 
+.references__pradelna{
+    margin: 10px;
+}
+.references__restyl{
+    margin: 10px;
+}
+
+.references__text{
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 10em;
+ 
+}
+
+.references__text--hidden{
+    visibility: hidden;
+}
