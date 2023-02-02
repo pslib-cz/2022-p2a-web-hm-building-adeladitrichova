@@ -30,6 +30,7 @@ body{
   .hamburger-menu {
     display: flex;
     }
+
 }
 
 .nav-item::marker{

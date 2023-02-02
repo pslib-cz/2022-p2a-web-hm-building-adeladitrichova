@@ -1,3 +1,30 @@
+/*html*/
+
+/* Navbar */
+
+.header{
+    
+}
+
+.navbar__menu{
+    background-color: white;
+    display: flex;
+}
+
+.nav-item::marker{
+    visibility: hidden;
+}
+
+.nav-item{
+    font-weight: 500;
+    padding: 35px 30px 35px 30px;
+    background-color: white;
+}
+
+.nav-link{
+    color: var(--text-dark-grey);
+}
+
 /* Index */
 
 
@@ -20,9 +47,11 @@
 /* neco dal */
 
 .references{
-    align-items: center;
     text-align: center;
     margin: 20px;
+    margin: 10em;
+
+    align-items: center;
 }
 
 .box{
@@ -58,4 +87,23 @@
 
 .references__text--hidden{
     visibility: hidden;
+}
+
+
+
+
+
+
+.onas__container{
+    margin-left: 200px;
+}
+
+.onas_h{
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+}
+
+.novostavby__container{
+    margin-left: 200px;
 }
