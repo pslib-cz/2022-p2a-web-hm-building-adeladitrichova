@@ -22,6 +22,35 @@ body{
     padding-bottom: 1em;
 }
 
+#services{
+    margin: 1.3em;
+}
+
+.sluzby__button{
+    margin-bottom: 2.85em;
+}
+
+.sluzby__img:nth-child(2n+1){
+    border-radius: 0 0 2em 0;
+}
+
+.sluzby__img:nth-child(2n+2){
+    border-radius: 0 0 0 1em;
+}
+
+.presvedceni__div{
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), 
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), 
+    linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../images/background-CTAblock-4460w.jpg");
+    background-blend-mode: normal, normal, hue, normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 14em;
+}
+
+
 /*
 .sluzby__grid{
     display: grid;
