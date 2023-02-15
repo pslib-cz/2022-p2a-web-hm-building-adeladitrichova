@@ -1,6 +1,7 @@
 html{
     font-family: Open Sans;
     color: var(--text-dark-grey);
+    font-size: 14px;
 }
 
 :root{
@@ -9,60 +10,34 @@ html{
     --text-dark-grey: #3A3A3A;
 }
 
+/* INDEX */
+
 h1{
+    font-size: 2.14em;
+    font-weight: 800;
     color: white;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 0;
 }
 
 h2{
-    font-size: 22px;
+    font-size: 1.42em;
+    font-weight: 300;
+    color: white;
 }
 
-.h2--orange{
+.article__h--large{
+    font-size: 1.57em;
+    font-weight: 700;
+}
+
+.article__h--large--orange{
     color: var(--main-orange);
 }
 
-
 h3{
-    font-size: 20px;
+    font-size: 1.42em;
 }
 
 h4{
-    color: white;
-    font-size: 17px;
-}
-
-h5{
-    font-size: 30px;
-}
-
-.top__p{
-    color: white;
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 0;
-}
-
-.nav__link{
-    color: white;
-    font-size: 16px;
-    font-family: Open Sans;
-    font-weight: 700;
-    
-}
-
-.kontakt__header{
-    font-family: Open Sans;
-    font-size: 22px;
-    font-weight: 700;
-    color: black;
-}
-
-.kontakt__p{
-    font-family: Open Sans;
-    font-weight: 400;
-    color: black;
+    font-size: 1.57em;
 }
 

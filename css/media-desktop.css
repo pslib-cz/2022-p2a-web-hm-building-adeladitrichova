@@ -1,45 +1,7 @@
 /*html*/
 
-/* Navbar */
-
-.header{
-    
-}
-
-.navbar__menu{
-    background-color: white;
-    display: flex;
-}
-
-.nav-item::marker{
-    visibility: hidden;
-}
-
-.nav-item{
-    font-weight: 500;
-    padding: 35px 30px 35px 30px;
-    background-color: white;
-}
-
-.nav-link{
-    color: var(--text-dark-grey);
-}
-
 /* Index */
 
-
-.sluzby{
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 100px;
-
-}
-
-.sluzby__img {
-    grid-row: 1 / 4;
-    height: auto;
-}
 
 
 
