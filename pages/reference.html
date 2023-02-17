@@ -17,78 +17,60 @@
       media="screen and (min-width: 1350px)"
     />
 </head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="./index.html" class="navbar__logo"><img src="./images/logo.png" alt="logo" width="130px"></a>
-            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">DOMŮ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sluzby.html">SLUŽBY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link--active" href="./reference.html">REFERENCE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./onas.html">O NÁS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./kontakt.html">KONTAKT</a>
-              </li>
-            </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-          </nav>
-          <script>
-            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-            for (const btn of hamburgerButtons) {
-              btn.onclick = (event) => {
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                  menu.classList.toggle("navbar__menu--hidden");
-                }
-              }
-            }
-          </script>
+<!-- REFERENCE -->
+<section id="reference" class="references">
+  <article class="references__article">
+      <h4>Rseference</h4>
+      <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví.</strong>
+        To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference 
+        jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+  </article>
 
-    </header> 
-    <div class="references">
-      <div class="references__text">
-          <h2>Reference</h2>
-          <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví.</strong>
-            To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference 
-            jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
-      </div>
-      <div class="reference__list">
-          <div class="references__zbrojnice">
-              <img class="references__img--zbrojnice" src="../images/reference/reference-hasicska-zbrojnice-600w.jpg">
-              <div class="references__text--hidden">
-                  <h2>Hasičská zbrojnice</h2>
-                  <p>celková rekonstrukce</p>
-              </div>
+  <!-- REFERENCES LIST -->
+  <div class="references__list">
+
+      <!-- ZBROJNICE -->
+      <div class="references__zbrojnice">
+          <div class="references__img--zbrojnice">
+              <img class="references__img" src="../images/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičská zbrojnice">
           </div>
-          <div class="references__pradelna">
-              <img class="references__img--pradelna" src="../images/reference/reference-pradelna-600w.jpg">
-              <div class="references__text--hidden">
-                  <h2>Samoobslužná prádelna</h2>
-                  <p>stavební úpravy a opravy</p>
-              </div>
-          </div>
-          <div class="references__restyl">
-              <img class="references__img--restyl" src="../images/reference/reference-plocha-600w.jpg">
-              <div class="references__text--hidden">
-                  <h2>Venkovní plochy Restyl</h2>
-                  <p>provedení venkovnách ploch</p>
-              </div>
+          <div class="references__text--hidden">
+              <h4>Hasičská zbrojnice</h4>
+              <span class="references__text--small">celková rekonstrukce</span>
           </div>
       </div>
-      <a href="./pages/reference.html" class="box__button">Více referencí</a>
-  </div>  
-        <footer class="footer">
-            <h2>Plácneme si pro Váš projekt?</h2>
-            <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-            <a class="footer__a" href="./pages/sluzby.html"><button class="footer__button">Nezávazně se poptat</button></a>
-        </footer>
-    </body>   
+
+      <!-- PRADELNA -->
+      <div class="references__pradelna">
+          <div class="references__img--pradelna">
+              <img class="references__img" src="../images/reference/reference-pradelna-600w.jpg" alt="Samoobslužná prádelna">
+          </div>
+          <div class="references__text--hidden">
+              <h4>Samoobslužná prádelna</h4>
+              <span class="references__text--small">stavební úpravy a opravy</span>
+          </div>
+      </div>
+
+      <!-- RESTYL -->
+      <div class="references__restyl">
+          <div class="references__img--restyl">
+              <img class="references__img" src="../images/reference/reference-plocha-600w.jpg" alt="Restyl plocha">
+          </div>
+          <div class="references__text--hidden">
+              <h4>Hasičská zbrojnice</h4>
+              <span class="references__text--small">celková rekonstrukce</span>
+          </div>
+      </div>
+  </div>
+  <!-- MORE REFERENCES BUTTON -->
+  <a href="./pages/reference.html" class="references__button">Více referencí</a>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span class="footer__h">Plácneme si pro Váš projekt?</span>
+  <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+  <a href="./reference.html" class="footer__button">Nezávazně se poptat</a>
+</footer>
             

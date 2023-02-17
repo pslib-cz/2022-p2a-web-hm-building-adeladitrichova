@@ -16,12 +16,14 @@ h1{
     font-size: 2.14em;
     font-weight: 800;
     color: white;
+    margin-bottom: 0;
 }
 
 h2{
     font-size: 1.42em;
     font-weight: 300;
     color: white;
+    margin-top: 0;
 }
 
 .article__h--large{
@@ -39,5 +41,24 @@ h3{
 
 h4{
     font-size: 1.57em;
+    margin: .1em 0 0 0;
+
 }
 
+.references__text--small{
+    margin-bottom: 2.28em;
+    display: block;
+}
+
+.sluzby__h--small{
+    font-weight: 700;
+    font-size: 1.21em;
+    color: white;
+    display: block;
+    margin: .5em;
+}
+
+.footer__h{
+    font-weight: 700;
+    font-size: 1.57em;
+}

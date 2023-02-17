@@ -2,7 +2,9 @@
 
 /* Index */
 
-
+.hero__button{
+    display: block;
+}
 
 
 
@@ -12,7 +14,6 @@
     text-align: center;
     margin: 20px;
     margin: 10em;
-
     align-items: center;
 }
 
@@ -20,14 +21,13 @@
     padding-left: 3em;
 }
 
-.reference__list{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -50px;
-    margin-left: 1em;
-    margin-left: 1em;
-       
+
+.references__list{
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
+
+/*
 
 .references__zbrojnice{
     margin: 10px;

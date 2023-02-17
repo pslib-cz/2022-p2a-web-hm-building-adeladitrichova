@@ -22,37 +22,62 @@ body{
     padding-bottom: 1em;
 }
 
+.hero__button{
+    display: none;
+}
+
 #services{
-    margin: 1.3em;
+    margin: 1.4em;
 }
 
 .sluzby__button{
     margin-bottom: 2.85em;
 }
 
-.sluzby__img:nth-child(2n+1){
+s
+.sluzby__img:nth-child(){
     border-radius: 0 0 2em 0;
 }
 
-.sluzby__img:nth-child(2n+2){
+.sluzby__img:nth-child(){
     border-radius: 0 0 0 1em;
 }
 
 .presvedceni__div{
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), 
-    linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), 
-    linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../images/background-CTAblock-4460w.jpg");
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), 
+    linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../images/background-CTAblock-4460w.jpg);
     background-blend-mode: normal, normal, hue, normal;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    height: 14em;
+    padding: 1.6em;
+    margin-bottom: 3.28em;
 }
 
 
-/*
-.sluzby__grid{
+
+/* REFERENCES */
+
+#reference{
+    margin: 1.4em;
+    text-align: center;
+}
+
+.references__list{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}*/
+    
+}
+
+.references__img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer{
+    background-color: var(--main-orange);
+    color: white;
+    text-align: center;
+    padding: 2.57em;
+    margin-top: 5.35em;
+}
