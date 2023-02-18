@@ -18,41 +18,8 @@
     />
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="./index.html" class="navbar__logo"><img src="./images/logo.png" alt="logo" width="130px"></a>
-            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">DOMŮ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sluzby.html">SLUŽBY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./reference.html">REFERENCE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./onas.html">O NÁS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link--active" href="./kontakt.html">KONTAKT</a>
-              </li>
-            </menu>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-          </nav>
-          <script>
-            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-            for (const btn of hamburgerButtons) {
-              btn.onclick = (event) => {
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                  menu.classList.toggle("navbar__menu--hidden");
-                }
-              }
-            }
-          </script>
-
-        </header>
+    <header>
+    </header>
         <div class="kontakt__container">
             <div class="kontakt__container--contactus">
                 <h2>Kontaktujte nás</h2>
@@ -70,13 +37,13 @@
             <!-- tupy komenty, kazdopadne formular asi-->
             <div class="kontakt__form">
                 <!-- nadpiss -->
-                <span class="kontakt__header">Nezávazná poptávka služeb</span>
+                <span class="kontakt__h">Nezávazná poptávka služeb</span>
                 <!-- text -->
-                <p class="kontakt__p">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+                <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
 
                 <!-- real formular-->
                 <div class="kontakt__form--labels">
-                    <form action="">
+                    <form action="" class="form">
             
                         <label for="fullname">Jméno a příjmení</label>
                         <input type="text" id="fullname" name="fullname">
