@@ -48,7 +48,8 @@ h4 {
 
 h5 {
     font-size: 2.14em;
-    
+    text-align: center;
+
 }
 
 
@@ -73,5 +74,11 @@ h5 {
 .kontakt__h {
     font-weight: 700;
     font-size: 2.14em;
+    color: black;
+}
+
+.poptavka__h {
+    font-size: 1.57em;
+    font-weight: 700;
     color: black;
 }

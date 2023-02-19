@@ -58,52 +58,60 @@
     </script>
   </header>
 
-  <div class="kontakt__container">
-    <div class="kontakt__container--contactus">
-      <h2>Kontaktujte nás</h2>
-      <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
-
-      <div class="grid__contacts">
-        <p class="contacts__description"><span class="icon-dot--phone "></span><span class="icon-dot"></span>+420 775
-          564</p>
-        <p class="contacts__description"><span class="icon-dot--mail "></span><span
-            class="icon-dot"></span>stavby@hm-building.cz</p>
-        <p class=" contacts__description"><span class="icon-dot--position"></span><span
-            class="icon-dot"></span>Křižanská 12, Liberec XXII-Horní Suchá</p>
-      </div>
-
-      <img class="kontakt__img--mapa" src="../images/mapa.jpg" alt="mapa">
-    </div>
-
-    <!-- tupy komenty, kazdopadne formular asi-->
-    <div class="kontakt__form">
-      <!-- nadpiss -->
-      <span class="kontakt__h">Nezávazná poptávka služeb</span>
-      <!-- text -->
+  <section class="section--kontakt">
+    <article class="section__title">
+      <span class="kontakt__h">Kontaktujte nás</span>
+      <p class="kontakt__p">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.
+      </p>
+    </article>
+    <article>
+      <ul class="services__article__body kontakt">
+        <li><i class="kontakt__icon"><img src="../images/phone.svg"></i><a href="tel:+420 775 550 564">+420 775 550 564
+        </li></a>
+        <li><i class="kontakt__icon"><img src="../images/mail.svg"></i><a
+            href="mailto:stavby@hm-building.cz">stavby@hm-building.cz</a></li>
+        <li><i class="kontakt__icon"><img src="../images/location.svg"></i><a
+            href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská
+            12, Liberec XXII-Horní Suchá</a></li>
+      </ul>
+    </article>
+    <article>
+      <a href=""></a>
+      <aside class="map"></aside>
+    </article>
+    <article class="section__subtitle">
+      <span class="poptavka__h">Nezávazná poptávka služeb</span>
       <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-
-      <!-- real formular-->
-      <div class="kontakt__form--labels">
-        <form action="" class="form">
-
-          <label for="fullname">Jméno a příjmení</label>
-          <input type="text" id="fullname" name="fullname">
-
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email">
-
-          <label for="phone">Telefon</label>
-          <input type="text" id="phone" name="phone">
-
-          <label for="subject">Poznámka</label>
-          <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
-
-          <input class="form__button--kontakt" type="submit" value="Odeslat nezávaznou poptávku">
-        </form>
-
-      </div>
-    </div>
-  </div>
+      <form>
+        <strong><label class="form__item">
+            Jméno a příjmení
+            <input type="text" class="form__item__input">
+          </label></strong>
+        <strong><label class="form__item">
+            E-mail
+            <input type="email" class="form__item__input">
+          </label></strong>
+        <strong><label class="form__item">
+            Telefon
+            <input type="text" class="form__item__input">
+          </label></strong>
+        <strong><label class="form__item">
+            Poptávaná služba
+            <select class="form__item__input">
+              <option value="Novostavba">Novostavba</option>
+              <option value="Novostavba">Průmyslová stavba</option>
+              <option value="Novostavba">Rekonstrukce</option>
+              <option value="Novostavba">Komunikace a zpevněné plochy</option>
+            </select>
+          </label></strong>
+        <strong><label class="form__item">
+            Poznámka
+            <textarea rows="10" class="form__item__input"></textarea>
+          </label></strong>
+        <button class="button--orange" type="submit">Odeslat nezávaznou poptávku</button>
+      </form>
+    </article>
+  </section>
 </body>
 
 </html>
