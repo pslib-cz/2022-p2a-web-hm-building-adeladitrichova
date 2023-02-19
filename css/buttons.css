@@ -1,4 +1,4 @@
-.sluzby__button{
+.sluzby__button {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -10,9 +10,14 @@
     background-color: white;
     padding: 12px 40px;
     display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 
-.presvedceni__button{
+.sluzby__button:hover {
+    transform: scale(0.9);
+}
+
+.presvedceni__button {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -25,11 +30,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-.presvedceni__button:hover{
-	transform: scale(0.9);
+.presvedceni__button:hover {
+    transform: scale(0.9);
 }
 
-.references__button{
+.references__button {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -42,11 +47,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-.references__button:hover{
-	transform: scale(0.9);
+.references__button:hover {
+    transform: scale(0.9);
 }
 
-.footer__button{
+.footer__button {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
@@ -59,11 +64,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-.footer__button:hover{
-	transform: scale(0.9);
+.footer__button:hover {
+    transform: scale(0.9);
 }
 
-.form__button--kontakt{
+.form__button--kontakt {
     font-family: Open Sans;
     text-align: center;
     text-decoration: none;
@@ -78,7 +83,7 @@
 }
 
 
-.hero__button{
+.hero__button {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -86,5 +91,10 @@
     font-weight: 700;
     border: none;
     background-color: var(--main-orange);
-    padding: 12px 40px;
+    padding: 1em 2.4em;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+    transform: scale(0.9);
 }

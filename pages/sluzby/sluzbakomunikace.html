@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HM Building</title>
+    <title>HM Building.cz s.r.o.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="stylesheet" href="../../css/buttons.css" />
-    <link rel="stylesheet" href="../../css/media-mobil.css" />
-    <link
-      rel="stylesheet"
-      href="../../css/media-desktop.css"
-      media="screen and (min-width: 1350px)"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/media-mobil.css" />
+    <link rel="stylesheet" href="./css/media-desktop.css" media="screen and (min-width: 1024px)" />
 </head>
-<header class="header">
-</header>
+
 <body>
-    <div class="novostavby__container">
-        <h5>Novostavby</h5>
-        <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč,</strong> případně zhotovit ucelenou část. 
-            Jsme schopni zajistit také <strong>projektovou dokumentaci.</strong> Provádíme <strong>stavby jak průmyslového typu,</strong> 
-            tak <strong>rodinné stavby.</strong> Stavba je prováděna dle projektové dokumentace dodané investorem a v rozsahu dle smlouvy o dílo, která obsahuje 
-            jasně definované ceny dle položkového rozpočtu.</p>
+
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo">
+                <img src="./images/logo.png" alt="logo" width="130px">
+            </a>
+
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link--active" href="./index.html">DOMŮ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sluzby">SLUŽBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/reference.html">REFERENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/onas.html">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/kontakt.html">KONTAKT</a>
+                </li>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
+
+    <body>
+        <div class="novostavby__container">
+            <h5>Novostavby</h5>
+            <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč,</strong> případně
+                zhotovit ucelenou část.
+                Jsme schopni zajistit také <strong>projektovou dokumentaci.</strong> Provádíme <strong>stavby jak
+                    průmyslového typu,</strong>
+                tak <strong>rodinné stavby.</strong> Stavba je prováděna dle projektové dokumentace dodané
+                investorem a v rozsahu dle smlouvy o dílo, která obsahuje
+                jasně definované ceny dle položkového rozpočtu.</p>
             <ul>
                 <li class="novostaby__li">zemní práce</li>
                 <li class="novostaby__li">základové konstrukce</li>
@@ -34,11 +76,13 @@
                 <li class="novostaby__li">úpravy povrchů</li>
                 <li class="novostaby__li">střešní konstrukce</li>
             </ul>
-    </div>
-    <footer class="footer">
-        <h2>Plácneme si pro Váš projekt?</h2>
-        <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <a class="footer__a" href="./pages/sluzby.html"><button class="footer__button">Nezávazně se poptat</button></a>
-    </footer>
-</body>
+        </div>
+        <footer class="footer">
+            <h2>Plácneme si pro Váš projekt?</h2>
+            <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            <a class="footer__a" href="./pages/sluzby.html"><button class="footer__button">Nezávazně se
+                    poptat</button></a>
+        </footer>
+    </body>
+
 </html>

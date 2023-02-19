@@ -1,67 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HM Building</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
-    <link rel="stylesheet" href="../css/media-mobil.css" />
-    <link
-      rel="stylesheet"
-      href="../css/media-desktop.css"
-      media="screen and (min-width: 1350px)"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HM Building.cz s.r.o.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/buttons.css" />
+  <link rel="stylesheet" href="../css/media-mobil.css" />
+  <link rel="stylesheet" href="../css/media-desktop.css" media="screen and (min-width: 1024px)" />
 </head>
+
 <body>
-    <header>
-    </header>
-        <div class="kontakt__container">
-            <div class="kontakt__container--contactus">
-                <h2>Kontaktujte nás</h2>
-                <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
 
-                <div class="grid__contacts">
-                    <p class="contacts__description"><span class="icon-dot--phone "></span><span class="icon-dot"></span>+420 775 564</p>
-                    <p class="contacts__description"><span class="icon-dot--mail "></span><span class="icon-dot"></span>stavby@hm-building.cz</p>
-                    <p class=" contacts__description"><span class="icon-dot--position"></span><span class="icon-dot"></span>Křižanská 12, Liberec XXII-Horní Suchá</p>
-                </div>
-                
-                <img class="kontakt__img--mapa" src="../images/mapa.jpg" alt="mapa">
-            </div>
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="navbar__logo">
+        <img src="../images/logo.png" alt="logo" width="130px">
+      </a>
 
-            <!-- tupy komenty, kazdopadne formular asi-->
-            <div class="kontakt__form">
-                <!-- nadpiss -->
-                <span class="kontakt__h">Nezávazná poptávka služeb</span>
-                <!-- text -->
-                <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+      <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
 
-                <!-- real formular-->
-                <div class="kontakt__form--labels">
-                    <form action="" class="form">
-            
-                        <label for="fullname">Jméno a příjmení</label>
-                        <input type="text" id="fullname" name="fullname">
-                    
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
-                                
-                        <label for="phone">Telefon</label>
-                        <input type="text" id="phone" name="phone">
-                
-                        <label for="subject">Poznámka</label>
-                        <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
-                    
-                        <input class="form__button--kontakt" type="submit" value="Odeslat nezávaznou poptávku">
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
-    </body>
+      <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+        <li class="nav-item">
+          <a class="nav-link--active" href="../index.html">DOMŮ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">SLUŽBY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/reference.html">REFERENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/onas.html">O NÁS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/kontakt.html">KONTAKT</a>
+        </li>
+      </menu>
+    </nav>
+    <script>
+      const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+      for (const btn of hamburgerButtons) {
+        btn.onclick = (event) => {
+
+          const menus = document.querySelectorAll(".hamburger-menu-list");
+          for (const menu of menus) {
+            menu.classList.toggle("navbar__menu--hidden");
+          }
+        }
+      }
+    </script>
+  </header>
+
+  <div class="kontakt__container">
+    <div class="kontakt__container--contactus">
+      <h2>Kontaktujte nás</h2>
+      <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+
+      <div class="grid__contacts">
+        <p class="contacts__description"><span class="icon-dot--phone "></span><span class="icon-dot"></span>+420 775
+          564</p>
+        <p class="contacts__description"><span class="icon-dot--mail "></span><span
+            class="icon-dot"></span>stavby@hm-building.cz</p>
+        <p class=" contacts__description"><span class="icon-dot--position"></span><span
+            class="icon-dot"></span>Křižanská 12, Liberec XXII-Horní Suchá</p>
+      </div>
+
+      <img class="kontakt__img--mapa" src="../images/mapa.jpg" alt="mapa">
+    </div>
+
+    <!-- tupy komenty, kazdopadne formular asi-->
+    <div class="kontakt__form">
+      <!-- nadpiss -->
+      <span class="kontakt__h">Nezávazná poptávka služeb</span>
+      <!-- text -->
+      <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+
+      <!-- real formular-->
+      <div class="kontakt__form--labels">
+        <form action="" class="form">
+
+          <label for="fullname">Jméno a příjmení</label>
+          <input type="text" id="fullname" name="fullname">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+
+          <label for="phone">Telefon</label>
+          <input type="text" id="phone" name="phone">
+
+          <label for="subject">Poznámka</label>
+          <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
+
+          <input class="form__button--kontakt" type="submit" value="Odeslat nezávaznou poptávku">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

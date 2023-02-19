@@ -46,10 +46,11 @@ h4 {
 
 }
 
-.references__text--small {
-    margin-bottom: 2.28em;
-    display: block;
+h5 {
+    font-size: 2.14em;
+    
 }
+
 
 .sluzby__h--small {
     font-weight: 700;
