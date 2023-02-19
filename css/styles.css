@@ -1,56 +1,57 @@
-html{
+html {
     font-family: Open Sans;
     color: var(--text-dark-grey);
     font-size: 14px;
 }
 
-:root{
+:root {
     --main-orange: #EB6C27;
     --background-white: #F5F5F5;
     --text-dark-grey: #3A3A3A;
+    --ligh-grey: #888888;
 }
 
 /* INDEX */
 
-h1{
+h1 {
     font-size: 2.14em;
     font-weight: 800;
     color: white;
     margin-bottom: 0;
 }
 
-h2{
+h2 {
     font-size: 1.42em;
     font-weight: 300;
     color: white;
     margin-top: 0;
 }
 
-.article__h--large{
+.article__h--large {
     font-size: 1.57em;
     font-weight: 700;
 }
 
-.article__h--large--orange{
+.article__h--large--orange {
     color: var(--main-orange);
 }
 
-h3{
+h3 {
     font-size: 1.42em;
 }
 
-h4{
+h4 {
     font-size: 1.57em;
     margin: .1em 0 0 0;
 
 }
 
-.references__text--small{
+.references__text--small {
     margin-bottom: 2.28em;
     display: block;
 }
 
-.sluzby__h--small{
+.sluzby__h--small {
     font-weight: 700;
     font-size: 1.21em;
     color: white;
@@ -58,17 +59,17 @@ h4{
     margin: .5em;
 }
 
-.footer__h{
+.footer__h {
     font-weight: 700;
     font-size: 1.57em;
 }
 
-.onas__h{
+.onas__h {
     font-weight: 700;
     font-size: 2.14em;
 }
 
-.kontakt__h{
+.kontakt__h {
     font-weight: 700;
     font-size: 2.14em;
     color: black;

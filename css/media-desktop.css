@@ -2,12 +2,6 @@
 
 /* Index */
 
-.hero__button {
-    display: block;
-}
-
-
-
 /* neco dal */
 
 .references {
@@ -41,54 +35,5 @@
 }
 
 .sluzby__grid article .sluzby__img {
-    border-radius: 0 0 1rem 0;
     height: 200px;
-}
-
-.sluzby__grid article:nth-of-type(even) .sluzby__img {
-    order: 1;
-    border-radius: 0 0 0 1rem;
-}
-
-/*
-
-.references__zbrojnice{
-    margin: 10px;
-}
-
-.references__pradelna{
-    margin: 10px;
-}
-.references__restyl{
-    margin: 10px;
-}
-
-.references__text{
-    text-align: center;
-    margin-left: 10em;
-    margin-right: 10em;
- 
-}
-
-.references__text--hidden{
-    visibility: hidden;
-}
-
-
-
-
-
-
-.onas__container{
-    margin-left: 200px;
-}
-
-.onas_h{
-    font-weight: 700;
-    font-size: 60px;
-    text-align: center;
-}
-
-.novostavby__container{
-    margin-left: 200px;
 }

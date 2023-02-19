@@ -30,14 +30,34 @@
 
             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section_1">DOMŮ</a>
+                    <a class="nav-link--active" href="./index.html">DOMŮ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sluzby">SLUŽBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/reference.html">REFERENCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/onas.html">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/kontakt.html">KONTAKT</a>
                 </li>
             </menu>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
 
-
-
-
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
         <!-- HEADER HERO -->
         <div class="header__hero">
             <h1>HM Building.cz s.r.o.</h1>
@@ -54,7 +74,8 @@
             <p>Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám
                 <strong>rodinný domek na klíč</strong>,
                 nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to
-                včetně okolních ploch.</p>
+                včetně okolních ploch.
+            </p>
         </article>
 
 
@@ -210,20 +231,6 @@
         <p class="footer__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <a href="./reference.html" class="footer__button">Nezávazně se poptat</a>
     </footer>
-
-
-    <script>
-        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-        for (const btn of hamburgerButtons) {
-            btn.onclick = (event) => {
-
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                    menu.classList.toggle("navbar__menu--hidden");
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>
