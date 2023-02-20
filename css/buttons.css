@@ -1,3 +1,7 @@
+html {
+    font-size: 14px;
+}
+
 .sluzby__button {
     text-align: center;
     text-decoration: none;
@@ -28,6 +32,7 @@
     padding: 12px 40px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
+
 }
 
 .presvedceni__button:hover {
