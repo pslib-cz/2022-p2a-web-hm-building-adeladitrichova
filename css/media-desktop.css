@@ -241,3 +241,24 @@ form button {
     border: none;
     font-weight: 700;
 }
+
+
+/* REFERENCE */
+
+.reference__h2 {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.reference__h2--small {
+    display: table;
+    margin: 0 auto;
+}
+
+.reference__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 2em;
+}
